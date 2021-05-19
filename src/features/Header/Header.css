@@ -1,0 +1,42 @@
+.app-logo {
+    height: 26px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+  
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px white;
+    margin-bottom: 20px;
+    padding: 0 60px;
+}
+  
+.logo-section {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+  
+.main-search-bar {
+    color: white;
+    height: 22px;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 6px;
+    background-color: black;
+}
+  
+.main-search-bar-icon {
+    font-size: 16px;
+}
+
+input {
+    font-family: 'Roboto', sans-serif;
+}

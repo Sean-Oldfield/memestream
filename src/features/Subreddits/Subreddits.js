@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from '../reddit-logo-orange.png';
+import './Subreddits.css';
+import logo from '../../reddit-logo-orange.png';
 
 export function Subreddits() {
     return (

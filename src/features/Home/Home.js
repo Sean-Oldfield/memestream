@@ -1,10 +1,10 @@
 import React from 'react';
-import { Post } from './Post.js';
+import './Home.css';
+import { Post } from '../Post/Post.js';
 
-export function PostsList() {
+export function Home() {
     return (
         <div class="posts-list-container">
-            <Post />
             <Post />
         </div>
     );
