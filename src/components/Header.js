@@ -7,7 +7,7 @@ export function Header() {
         <header>
             <div className="logo-section">
                 <img className="app-logo" src={logo} alt="app-logo" />
-                <h1>Reddit Dark Minimal</h1>
+                <h1>REDDIT DARK</h1>
             </div>
             <SearchBar />
         </header>

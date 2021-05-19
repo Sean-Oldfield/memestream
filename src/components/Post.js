@@ -1,12 +1,14 @@
 import React from 'react';
-import cheetah from '../cheetah.JPG';
-
+import { PostBody } from './PostBody';
+import { PostFooter } from './PostFooter.js';
+import { Voting} from './Voting.js';
 
 export function Post() {
     return (
-        <div>
-            <h2>A Buddhist Monk praying and holding the hand of a man who died sitting at a train station in China</h2>
-            <img className="post-img" src={cheetah} alt="cheetah" />
+        <div className="post-container">
+            <Voting />
+            <PostBody />
+            <PostFooter />
         </div>
     );
 }

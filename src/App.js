@@ -1,13 +1,17 @@
 import React from 'react';
 import './App.css';
 import { Header } from './components/Header.js';
-import { Post } from './components/Post.js';
+import { PostsList } from './components/PostsList.js';
+import { Subreddits } from './components/Subreddits';
 
 function App() {
   return (
     <div className="App">
-     <Header /> 
-     <Post />
+     <Header />
+     <div className="page-container">
+        <PostsList />
+        <Subreddits />
+     </div> 
     </div>
   );
 }
