@@ -1,10 +1,13 @@
 import React from 'react';
 import './App.css';
+import { Header } from './components/Header.js';
+import { Post } from './components/Post.js';
 
 function App() {
   return (
     <div className="App">
-      <h1>Reddit Dark Minimal</h1>
+     <Header /> 
+     <Post />
     </div>
   );
 }

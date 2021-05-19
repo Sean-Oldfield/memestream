@@ -1,3 +1,50 @@
+body {
+  background-color: black;
+  color: white;
+}
+
 .App {
   text-align: center;
+  color: white;
+}
+
+.app-logo {
+  height: 26px;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: solid 1px white;
+}
+
+.logo-section {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.main-search-bar {
+  color: white;
+  height: 22px;
+  margin-right: 10px;
+  border: 1px solid white;
+  border-radius: 6px;
+  background-color: black;
+}
+
+.main-search-bar-icon {
+  font-size: 16px;
+}
+
+/* POST STYLING */
+
+.post-img {
+  max-height: 500px;
 }
