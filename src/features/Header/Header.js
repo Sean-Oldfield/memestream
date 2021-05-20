@@ -9,7 +9,7 @@ export function Header() {
         <header>
             <div className="logo-section">
                 <img className="app-logo" src={logo} alt="app-logo" />
-                <h1>REDDIT DARK</h1>
+                <h1>MEMESTREAM</h1>
             </div>
             <div>
                 <input className="main-search-bar" placeholder="Search" type="text" />
