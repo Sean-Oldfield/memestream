@@ -1,13 +1,13 @@
 export const getSubredditPosts = async (subreddit) => {
     const response = await fetch(`${subreddit}.json`);
     const json = await response.json();
-    console.log(json.data.children.map((post) => post.data));
     return json.data.children.map((post) => post.data);
 }
 
 export const getSubreddits = async () => {
-    const response = await fetch(`subreddits.json`);
+    const response = await fetch(`subreddits/search.json?q=memes`);
     const json = await response.json();
+    console.log(json.data.children.map((subreddit) => subreddit.data));
     return json.data.children.map((subreddit) => subreddit.data);
 }
 
