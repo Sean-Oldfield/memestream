@@ -1,8 +1,7 @@
 import React from 'react';
 import logo from '../../reddit-logo-orange.png';
 import './Header.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { HiOutlineSearch } from 'react-icons/hi';
 
 export function Header() {
     return (
@@ -13,7 +12,7 @@ export function Header() {
             </div>
             <div>
                 <input className="main-search-bar" placeholder="Search" type="text" />
-                <FontAwesomeIcon icon={faSearch} className="main-search-bar-icon" />
+                <HiOutlineSearch className="main-search-bar-icon" />
             </div>
         </header>
     );

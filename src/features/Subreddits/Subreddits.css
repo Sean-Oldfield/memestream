@@ -1,26 +1,24 @@
 .subreddits-container {
-    grid-area: 1 / 2 / span 1 / span 1;
     text-align: left;
-    border: 1px solid white;
-    border-radius: 10px;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05)!important;
+    border-radius: 4px;
 }
   
 .subreddits-title {
     font-family: 'Kanit', sans-serif;
     font-weight: bold;
-    padding: 12px 30px 0 30px;
-    margin-bottom: 0px;
 }
   
 .subreddits-list {
     list-style: none;
-    padding: 12px 30px;
+    padding: 0;
 }
   
 .subreddits-list li {
     font-size: 18px;
     margin-bottom: 16px;
     font-family: 'Roboto', sans-serif;
+    color: #717171;
 }
   
 .subreddit-logo {

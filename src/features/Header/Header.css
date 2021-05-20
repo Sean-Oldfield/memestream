@@ -13,8 +13,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: solid 1px white;
-    margin-bottom: 20px;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05)!important;
     padding: 0 60px;
 }
   
@@ -25,15 +24,17 @@ header {
 }
   
 .main-search-bar {
-    color: white;
-    height: 22px;
+    background-color: #f3f3f3;
+    padding: 8px 16px;
+    border: none;
+    color: #717171;
     margin-right: 10px;
-    border: 1px solid white;
-    border-radius: 6px;
-    background-color: black;
+    border-radius: 4px;
+    flex-grow: 1;
 }
   
 .main-search-bar-icon {
+    color: #717171;
     font-size: 16px;
 }
 

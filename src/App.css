@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Roboto&display=swap');
 
 body {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: #444;
   font-family: 'Roboto', sans-serif;
 }
 
 .App {
   text-align: center;
-  color: white;
+  color: #444;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -16,7 +16,12 @@ body {
 
 .page-container {
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr;
-  padding: 0 60px;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 16px;
+  padding: 0 16px;
+  margin-top: 16px;
+}
+
+.card {
+  padding: 24px;
 }

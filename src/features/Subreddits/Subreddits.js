@@ -4,7 +4,7 @@ import logo from '../../reddit-logo-orange.png';
 
 export function Subreddits() {
     return (
-        <div className="subreddits-container">
+        <div className="subreddits-container card">
             <h2 className="subreddits-title">SUBREDDITS</h2>
             <ul className="subreddits-list">
                 <li><img src={logo} alt="subreddit logo" className="subreddit-logo"/> Subreddit 1</li>
