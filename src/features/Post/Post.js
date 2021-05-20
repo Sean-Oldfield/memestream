@@ -22,7 +22,7 @@ export function Post(props) {
                 <h2 className="post-title">{post.title}</h2>
                 <img className="post-img" src={post.url} alt="" />
                 <div className="post-footer-container">
-                    <p>{post.author}</p>
+                    <p className="author-name">{post.author}</p>
                     <p>{date}</p>
                     <p><TiMessage className="speech-icon" /> {post.num_comments}</p>
                 </div>

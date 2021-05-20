@@ -1,25 +1,38 @@
-.app-logo {
-    height: 26px;
-    margin-right: 10px;
+.app-logo-icon {
+    margin-right: 8px;
+    font-size: 1.5rem;
+    color: #f95738;
 }
 
 h1 {
     font-family: 'Kanit', sans-serif;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 1.5rem;
 }
   
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 64px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+    align-content: center;
     box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05)!important;
     padding: 0 60px;
 }
+
+.stream-selector {
+    color: #f95738;
+}
   
 .logo-section {
+    grid-column: 1 / 2;
     display: flex;
     justify-content: left;
+    align-items: center;
+}
+
+.search-section {
+    display: flex;
     align-items: center;
 }
   
@@ -28,9 +41,13 @@ header {
     padding: 8px 16px;
     border: none;
     color: #717171;
-    margin-right: 10px;
+    margin-right: 6px;
     border-radius: 4px;
     flex-grow: 1;
+}
+
+.main-search-bar:focus-visible {
+    outline:  #f95738 auto 1px;
 }
   
 .main-search-bar-icon {
@@ -39,5 +56,20 @@ header {
 }
 
 input {
-    font-family: 'Roboto', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1rem;
+    }
+
+    header {
+        padding: 0 20px;
+    }
+
+    .app-logo {
+        height: 22px;
+    }
+    
 }

@@ -1,16 +1,16 @@
 import React from 'react';
-import logo from '../../reddit-logo-orange.png';
 import './Header.css';
 import { HiOutlineSearch } from 'react-icons/hi';
+import { FaReddit } from 'react-icons/fa';
 
 export function Header() {
     return (
         <header>
             <div className="logo-section">
-                <img className="app-logo" src={logo} alt="app-logo" />
-                <h1>MEMESTREAM</h1>
+                <FaReddit className="app-logo-icon" />
+                <h1>MEME<span className="stream-selector">STREAM</span></h1>
             </div>
-            <div>
+            <div className="search-section">
                 <input className="main-search-bar" placeholder="Search" type="text" />
                 <HiOutlineSearch className="main-search-bar-icon" />
             </div>

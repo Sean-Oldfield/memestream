@@ -1,7 +1,12 @@
 export const formatDate = unformattedDate => {
+
     const UNIXDate = new Date(unformattedDate * 1000);
-    const date = UNIXDate.toLocaleString('en-gb', { day: 'numeric', month: 'long', year: 'numeric' });
-    const time = UNIXDate.toLocaleTimeString('en-gb', { hour: '2-digit', minute: '2-digit' });
-    const formattedDate = `${date} ${time}`;
+    const now = new Date();
+    
+    let diff = (now.getTime() - UNIXDate.getTime()) / 1000;
+    diff /= (60 * 60);
+    diff = Math.abs(Math.round(diff));
+
+    const formattedDate = `${diff} hours ago`;
     return formattedDate;
 }

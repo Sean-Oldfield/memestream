@@ -3,18 +3,19 @@
 body {
   background-color: white;
   color: #444;
-  font-family: 'Roboto', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
 }
 
 .App {
   text-align: center;
   color: #444;
-  font-family: 'Roboto', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
 }
 
 /* PAGE STYLING */
 
 .page-container {
+  background-color: #fcfcfc;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-gap: 16px;
@@ -24,4 +25,10 @@ body {
 
 .card {
   padding: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+  .page-container {
+    grid-template-columns: 1fr;
+  }
 }

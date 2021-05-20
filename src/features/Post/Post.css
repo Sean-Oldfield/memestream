@@ -19,34 +19,39 @@
 }
 
 .vote-count {
-  font-family: 'Roboto', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 1rem;
   margin: 8px auto;
   color: #717171;
 }
 
-.post-body-container {
+.post-container {
   width: 100%;
-  margin-bottom: 10px;
 }
-  
+
 .post-title {
-  font-size: 22px;
+  font-size: 1.17rem;
   line-height: 32px;
 }
 
 .post-img {
   width: 100%;
+  margin-bottom: 24px;
 }
 
 .post-footer-container {
+  font-size: 0.75rem;
   color: #717171;
   font-family: 'Kanit', sans-serif;
   border-top: 1px solid #e6e6e6;
-  padding: 0 30px;
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.author-name {
+  font-weight: bold;
+  color: #f95738;
 }
