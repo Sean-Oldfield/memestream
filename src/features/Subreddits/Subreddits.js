@@ -4,10 +4,13 @@ import { fetchSubreddits, selectSubreddits } from '../../store/subRedditSlice.js
 import './Subreddits.css';
 import { AnimatedList } from 'react-animated-list';
 import Skeleton from 'react-loading-skeleton';
+import { setSelectedSubreddit, selectSelectedSubreddit } from '../../store/redditSlice.js';
+import Placeholder from '../../reddit-logo-orange.png';
 
 export function Subreddits() {
 
     const subreddits = useSelector(selectSubreddits);
+    const selectedSubreddit = useSelector(selectSelectedSubreddit);
     const { isLoading } = useSelector((state) => state.subreddits);
     const dispatch = useDispatch();
 
@@ -15,7 +18,8 @@ export function Subreddits() {
         dispatch(fetchSubreddits());
     }, [dispatch]); // eslint-disable-line react-hooks/exhaustive-deps
 
-    // console.log(isLoading);
+    console.log(selectedSubreddit);
+    
     if(isLoading) {
         let index = 0;
         return (
@@ -36,9 +40,11 @@ export function Subreddits() {
             <ul className="subreddits-list">
                 {
                     subreddits.map((subreddit, index) => (
-                        <li key={subreddit.id}>
-                            <img className="subreddit-icon" src={subreddit.icon_img} alt="" /> {subreddit.display_name}
-                        </li>
+                        <button className="subreddit-button" type="button" onClick={() => dispatch(setSelectedSubreddit(subreddit.url))}>
+                            <li key={subreddit.id} className={`${selectedSubreddit === subreddit.url && `selected-subreddit`}`}>
+                                <img className="subreddit-icon" src={subreddit.icon_img ? subreddit.icon_img : Placeholder} alt="" /> {subreddit.display_name}
+                            </li>
+                        </button>
                         )
                     )
                 }
