@@ -18,8 +18,6 @@ export function Subreddits() {
         dispatch(fetchSubreddits());
     }, [dispatch]); // eslint-disable-line react-hooks/exhaustive-deps
 
-    console.log(selectedSubreddit);
-    
     if(isLoading) {
         let index = 0;
         return (
@@ -40,7 +38,7 @@ export function Subreddits() {
             <ul className="subreddits-list">
                 {
                     subreddits.map((subreddit, index) => (
-                        <button className="subreddit-button" type="button" onClick={() => dispatch(setSelectedSubreddit(subreddit.url))}>
+                        <button key={subreddit.id} className="subreddit-button" type="button" onClick={() => dispatch(setSelectedSubreddit(subreddit.url))}>
                             <li key={subreddit.id} className={`${selectedSubreddit === subreddit.url && `selected-subreddit`}`}>
                                 <img className="subreddit-icon" src={subreddit.icon_img ? subreddit.icon_img : Placeholder} alt="" /> {subreddit.display_name}
                             </li>

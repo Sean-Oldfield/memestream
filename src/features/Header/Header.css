@@ -2,12 +2,14 @@
     margin-right: 8px;
     font-size: 1.5rem;
     color: #f95738;
+    cursor: pointer;
 }
 
 h1 {
     font-family: 'Kanit', sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
+    cursor: pointer;
 }
   
 header {
@@ -48,6 +50,12 @@ header {
 
 .main-search-bar:focus-visible {
     outline:  #f95738 auto 1px;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    display: block;
 }
   
 .main-search-bar-icon {
