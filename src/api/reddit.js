@@ -1,4 +1,4 @@
-const API_ROOT = 'https://reddit.com';
+export const API_ROOT = 'https://www.reddit.com';
 
 export const getSubredditPosts = async (subreddit) => {
     const response = await fetch(`${API_ROOT}${subreddit}.json`);
@@ -7,7 +7,7 @@ export const getSubredditPosts = async (subreddit) => {
 }
 
 export const getSubreddits = async () => {
-    const response = await fetch(`${API_ROOT}subreddits/search.json?q=memes`);
+    const response = await fetch(`${API_ROOT}/subreddits/search.json?q=memes`);
     const json = await response.json();
     return json.data.children.map((subreddit) => subreddit.data);
 }
