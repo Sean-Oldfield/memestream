@@ -65,3 +65,14 @@
 .speech-icon {
   font-size: 1.3rem;
 }
+
+.comments-button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #f95738;
+}
+
+.comments-button:hover {
+  background-color: #f3f3f3;
+}

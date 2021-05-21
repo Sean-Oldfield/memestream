@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import './Home.css';
-import { fetchPosts, selectFilteredPosts, setSearchTerm } from '../../store/redditSlice';
+import { fetchPosts, selectFilteredPosts, setSearchTerm, fetchComments } from '../../store/redditSlice';
 import { Post } from '../Post/Post.js';
 import { PostLoading } from '../Post/PostLoading.js';
 import { AnimatedList } from 'react-animated-list';
@@ -16,6 +16,14 @@ export function Home() {
     useEffect(() => {
         dispatch(fetchPosts(selectedSubreddit));
     }, [selectedSubreddit]); // eslint-disable-line react-hooks/exhaustive-deps
+
+
+    const onToggleComments = (index) => {
+        const getComments = (permalink) => {
+        dispatch(fetchComments(index, permalink));
+        };
+        return getComments;
+    };
 
     if(isLoading) {
         let index = 0;
@@ -53,7 +61,7 @@ export function Home() {
     return (
         <div className="posts-list-container">
             {
-            posts.map((post, index) => <Post key={post.id} post={post} />)
+            posts.map((post, index) => <Post key={post.id} post={post} onToggleComments={onToggleComments(index)} />)
             }
         </div>
     );
