@@ -85,9 +85,9 @@ export function Post(props) {
                     </div>
                 </div>
                 <div className="comments-container">
-                    {renderComments()}
+                  {renderComments()}
                 </div>
-            </div>
+              </div>
         </div>
     );
     

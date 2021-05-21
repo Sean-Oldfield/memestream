@@ -33,7 +33,6 @@
 
 .post-title {
   font-size: 1.17rem;
-  line-height: 32px;
 }
 
 .post-img {
@@ -42,7 +41,7 @@
 }
 
 .post-footer-container {
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   color: #717171;
   font-family: 'Kanit', sans-serif;
   border-top: 1px solid #e6e6e6;
