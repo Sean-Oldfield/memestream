@@ -10,3 +10,7 @@ export const formatDate = unformattedDate => {
     const formattedDate = `${diff} hours ago`;
     return formattedDate;
 }
+
+export const formatVoteCount = unformattedNum => {
+    return unformattedNum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}

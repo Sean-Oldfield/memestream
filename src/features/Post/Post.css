@@ -14,8 +14,9 @@
 }
 
 .voting-arrow {
+  cursor: pointer;
   font-size: 1.2rem;
-  color: #717171
+  color: #717171;
 }
 
 .vote-count {
